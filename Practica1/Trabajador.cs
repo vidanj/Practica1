@@ -13,7 +13,7 @@ namespace Practica1
         Operador
     }
 
-    public  class Trabajador:IEnsamblar
+    public abstract class Trabajador:IEnsamblar
     {
 
         protected string nomb;
@@ -27,7 +27,6 @@ namespace Practica1
             System.Console.WriteLine("Instancia Trabajador.");
         }
 
-
         public void IngresarNombre(string nombre)
         {
             this.nomb = nombre;
@@ -37,19 +36,15 @@ namespace Practica1
         {
             return nomb + " esta registrado.";
         }
-
-        public int Ensamblar()
-        {
-            return 1;
-        }
-
-        public int Inspeccionar()
-        {
-            return 2;
-        }
-        public string Reportar()
+                
+        public string Reportarse()
         {
             return "Se Reporto "+ this.nomb;
         }
+
+
+        public abstract int Ensamblar();
+        public abstract int Inspeccionar();
+        public abstract ListaReporte Reportar();
     }
 }

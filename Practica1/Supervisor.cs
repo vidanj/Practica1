@@ -15,5 +15,22 @@ namespace Practica1
         {
             System.Console.WriteLine("Instancia Supervisor.");
         }
+
+        public override int Ensamblar()
+        {
+            System.Console.WriteLine("Supervisor " + this.nomb + " esta ensamblando");
+            return 1;
+        }
+
+        public override int Inspeccionar()
+        {
+            System.Console.WriteLine("Supervisor " + this.nomb + " esta Reportando");
+            return 2;
+        }
+
+        public override ListaReporte Reportar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

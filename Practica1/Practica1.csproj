@@ -45,6 +45,7 @@
     <Compile Include="Empleado.cs" />
     <Compile Include="IEnsamblar.cs" />
     <Compile Include="Jefe.cs" />
+    <Compile Include="ListaReporte.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Supervisor.cs" />

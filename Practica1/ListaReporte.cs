@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practica1
 {
-    interface IEnsamblar
+    public class ListaReporte
     {
-        int Ensamblar();
-        int Inspeccionar();
-        ListaReporte Reportar();
-        string Reportarse();
     }
 }
